@@ -1,0 +1,79 @@
+
+/*Page setting*/
+body{
+
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #C0C0C0;
+}
+
+
+/*Nav bar section */
+
+.navbar .logo,
+.navbar .navbar-nav > li > a {
+    color: white;
+}
+.navbar .logo:hover,
+.navbar .navbar-nav > li > a:hover {
+    color: #C0C0C0;
+
+}
+.navbar {
+    background-color: black;
+    min-height: 70px;
+    padding-top: 30px;
+}
+
+/*Align H1 and H2 */
+h1, h2 {
+    text-align: center;
+}
+
+
+
+/*space out sections */
+
+section{
+    padding-bottom: 20px;
+}
+
+
+/*Foot section */
+
+footer {
+    min-height: 80px;
+    background-color: black;
+    color: white;
+    padding-top: 15px;
+    text-align: center;
+}
+
+/*Above Mobile*/
+
+@media only screen and (min-width: 368px) {
+
+
+}
+
+/*Above Tablet */
+@media only screen and (min-width: 992px) {
+
+    footer{
+        padding-top: 30px;
+    }
+    footer .copyright{
+        text-align: left;
+    }
+    footer .contact-email{
+        text-align: right;
+    }
+
+
+}
