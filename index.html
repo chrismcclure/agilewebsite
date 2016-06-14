@@ -9,13 +9,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- my stylesheet -->
     <link rel="stylesheet" href="CSS/main.css">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-79263253-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 <body>
 
 
 <!-- Begining Top Nav -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -72,9 +81,14 @@
             </div>
 
             <div class="row" id="download">
-                <div class="col-lg-8 col-sm-12 col-lg-offset-2">
+                <div class="col-lg-8 col-sm-12 col-lg-offset-2 center">
                    <p>Here is some cool information about the PDF</p>
                     <span class="download">Download The FREE Program and Get Started Today</span>
+                    <p>
+                    <a href="downloads/TheFREEPDFoutline.pdf" download="Free Guide">
+                    <button class="btn btn-lg btn-primary download" value="Download">Download FREE Agile Goal Development Guide </button>
+                        </a>
+                    </p>
                 </div>
             </div>
 
@@ -84,7 +98,7 @@
     <!--End Header About and PDF Section-->
 
    <!--Contact Form Section-->
-    <section class="Contact" id="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-sm-12 col-lg-offset-2">
@@ -101,7 +115,8 @@
 
             <div class="row">
                 <div class="col-lg-8 col-sm-12 col-lg-offset-2">
-                   <p>This is the form</p>
+              <p>This is where the form should go</p>
+                   <iframe src="https://docs.google.com/forms/d/19Ojxv48Af2dIuStw_9FwzqniqHNUDGgicIhX3Kw9tZ4/viewform?embedded=true" width="760" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                     <span class="after-contact-form">Text after form if I need it</span>
                 </div>
             </div>
@@ -117,9 +132,9 @@
                     <p> <span>Contact: </span><a href="mailto:AgileGoalDevelopment@gmail.com">AgileGoalDevelopment@gmail.com</a></p>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12 no-pad">
                    <div class="copyright">
-                    <p>Copyright &copy; Agile Goal Devlopment 2016</p>
+                    <p><span class="small-hide"> |  </span>  Copyright &copy; Agile Goal Devlopment 2016</p>
                     </div>
                 </div>
                 </div>
