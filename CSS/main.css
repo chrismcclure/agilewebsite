@@ -1,10 +1,22 @@
+/*Colors
+dark dark blue: #293E6B;
+medium dark blue: #3B5997;
+medium blue: #639BF2;
+green: #78BB9C;
+gold: #B6A754;
+white: white;
+grey: #aaa;
+
 
 /*Page setting*/
 body{
-    padding-top: 100px;
-
+    padding-top: 80px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
-
+/*remove right side white space on small screens*/
+.html{
+    width: 100%;
+}
 a{
     text-decoration: none;
 }
@@ -14,6 +26,45 @@ a:hover{
     color: #C0C0C0;
 }
 
+p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+/*Align H1 and H2 */
+h1, h2 {
+    text-align: center;
+}
+h2{
+    margin-bottom: 30px;
+}
+
+/*Font Colors */
+
+.white h1{
+    color:  #B6A754;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.white h2{
+    color: #3B5997;
+}
+
+.white p{
+    color:  #293E6B;
+}
+
+.blue h2{
+    color: #FEFFFD;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.blue p, .blue li, .blue span{
+	color: white;
+}
 
 /*Nav bar section */
 
@@ -32,15 +83,16 @@ a:hover{
 
 }
 .navbar {
-    background-color: black;
+      background: linear-gradient(to bottom, rgba(59,89,151,1) 0%, rgba(99,155,242,1) 100%);
     min-height:  80px;
     padding-top: 20px;
 }
 
-/*Align H1 and H2 */
-h1, h2 {
-    text-align: center;
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white!important;
 }
+
 
 .center{
     text-align: center;
@@ -50,8 +102,17 @@ h1, h2 {
 /*space out sections */
 
 section{
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
+/*color for each secion */
+
+.blue{
+  background: linear-gradient(to bottom, rgba(59,89,151,1) 0%, rgba(99,155,242,1) 100%);
+}
+
+
 
 /*pdf second */
 
@@ -59,27 +120,51 @@ section{
 	margin-top: 20px;
 }
 
+.header button{
+    background-color: #78BB9C;
+    color: black;
+    font-size: 20px;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.header a:hover button {
+    background-color:black;
+    color:  #78BB9C;
+}
+
+/*form section */
+.contact-form{
+    text-align: center;
+}
+.contact-form #foxyform_embed_link_789621{
+    display: none!important;
+}
+
+iframe{
+    max-width: 100%!important;
+}
 /*Foot section */
 
 footer {
     min-height: 80px;
-    background-color: black;
-    color: white;
     padding-top: 15px;
     text-align: center;
-
 }
  footer .contact-email a{
-        color: white;
+    color: inherit;
     }
  .small-hide{
         display: none;
     }
 
+
 /*Above Mobile*/
 
 @media only screen and (min-width: 368px) {
-
+    iframe{
+        max-width: none;
+    }
 
 }
 
@@ -100,6 +185,9 @@ footer {
     }
     .no-pad{
         padding: 0;
+    }
+    .white h1{
+        font-size: 50px;
     }
 
 }
