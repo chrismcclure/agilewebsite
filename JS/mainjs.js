@@ -1,5 +1,18 @@
-$('iframe').load( function() {
-    $('iframe').contents().find("head")
-      .append($("<link rel='stylesheet' href='CSS/main.css''>"));
-    console.log('That worked');
+
+$( document ).ready(function() {
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+if(dd<10) {
+    dd='0'+dd
+}
+    if(mm<10) {
+   mm='0'+mm
+}
+  today = mm+'/'+dd+'/'+yyyy;
+    $('#message-date').text(today + ": ");
 });
+
+
+

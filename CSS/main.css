@@ -182,6 +182,40 @@ section{
     font-weight: bold;
     color: #B6A754;
 }
+
+/*form message div */
+
+#message{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+}
+
+
+
+@keyframes blink {
+	0% {color: white}
+	50% {color: red}
+}
+
+#message-p{
+    margin: 0;
+    font-size: 20px;
+    color: white;
+    animation: blink 2s step-end infinite;
+
+}
+
+
+#message-date{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
 .contact-form{
     text-align: center;
 }
